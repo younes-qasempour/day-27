@@ -2,12 +2,12 @@ from tkinter import *
 
 def convertor():
     x = round(float(entry.get()) * 1.609, 2)
-    km_value_label.config(text=x)
+    km_value_label.config(text=str(x))
 
 
 window = Tk()
 window.title("Mile to Km Converter")
-window.minsize(300, 100)
+window.config(padx=20, pady=20)
 
 #Label
 miles_label = Label(text="Miles")
